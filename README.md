@@ -17,7 +17,7 @@ Full list with reasons: [ENTRIES.md](ENTRIES.md), including side-by-side tables 
 - [.NET Agent Skills (official)](https://github.com/dotnet/skills) (use): pick it if you want a baseline set of .NET skills from the people who ship the SDK.
 - [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) (use): pick it if you are building your own agents on .NET and want the vendor-supported route.
 - [Microsoft MCP servers (Azure, Fabric)](https://github.com/microsoft/mcp) (use): pick it if your agent needs to work with Azure resources or Fabric.
-- [RoslynMcp (MadQ)](https://github.com/MadQ/RoslynMcp) (use): pick it if you want one Roslyn server for navigation plus careful rename, and you are on a current SDK.
+- [RoslynMcp (MadQ)](https://github.com/MadQ/RoslynMcp) (watch): pick it if you want one Roslyn server for navigation plus careful rename, and you are on a current SDK.
 - [mssql_mcp_server (RichardHan)](https://github.com/RichardHan/mssql_mcp_server) (use): pick it if you want agents to read from SQL Server with a safe default and do not need DBA diagnostics.
 <!-- radar:top5:end -->
 

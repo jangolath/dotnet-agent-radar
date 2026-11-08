@@ -59,12 +59,12 @@ I read each README and the repository metadata. I did not run these tools.
 - **Why this verdict:** MIT, very active, installs as a dotnet tool. Caveats: it rewrites your source, so use preview and a clean git tree; the open-issue count (about 2,300) is far above its size and is not a reliable bug signal; the 66-tool surface is large for an agent to choose from.
 - **Pick this if:** you want automated refactoring (rename, move, extract) and will review the diffs.
 
-### [RoslynMcp (MadQ)](https://github.com/MadQ/RoslynMcp) - USE
+### [RoslynMcp (MadQ)](https://github.com/MadQ/RoslynMcp) - WATCH
 
 `last push 2026-11-08 | not archived | MIT`
 
 - **What it is:** Roslyn MCP server for C# code intelligence: type resolution, cross-file references, semantic rename with preview/apply, diagnostics. 46 tools (44 public, 2 debug-only) per its README.
-- **Why this verdict:** MIT, active, documents its security boundary (file access limited to the workspace tree) and ships setup for common MCP clients. Caveats: self-described beta, installs with --prerelease, requires the .NET 10 or 11 SDK, and a recent breaking rename of the package and tool key.
+- **Why this verdict:** MIT, active, documents its security boundary (file access limited to the workspace tree) and ships setup for common MCP clients. Caveats: self-described beta, installs with --prerelease, requires the .NET 10 or 11 SDK, and a recent breaking rename of the package and tool key. Self-described beta; not yet hands-on tested here, so watch rather than use.
 - **Pick this if:** you want one Roslyn server for navigation plus careful rename, and you are on a current SDK.
 
 ### [RoslynMcpExtension (sailro)](https://github.com/sailro/RoslynMcpExtension) - WATCH
@@ -204,7 +204,7 @@ Stars are deliberately left out: they move weekly and do not rank quality. Tool 
 |---|---|---|---|---|---|---|
 | [RoslynMCP (carquiza)](https://github.com/carquiza/RoslynMCP) | avoid | none | 2025-06-24 | C# | symbol search, references, dependencies, complexity | clone and build |
 | [RoslynMcpServer (JoshuaRamirez)](https://github.com/JoshuaRamirez/RoslynMcpServer) | watch | MIT | 2026-11-08 | C# | 66 (README claim) | dotnet tool |
-| [RoslynMcp (MadQ)](https://github.com/MadQ/RoslynMcp) | use | MIT | 2026-11-08 | C# | 46 (README claim) | dotnet tool (prerelease) |
+| [RoslynMcp (MadQ)](https://github.com/MadQ/RoslynMcp) | watch | MIT | 2026-11-08 | C# | 46 (README claim) | dotnet tool (prerelease) |
 | [RoslynMcpExtension (sailro)](https://github.com/sailro/RoslynMcpExtension) | watch | MIT | 2026-04-11 | C# | 7 | build the VSIX |
 | [roslyn-mcp (egorpavlikhin)](https://github.com/egorpavlikhin/roslyn-mcp) | avoid | none | 2025-05-15 | C# | 2 | dotnet run from source |
 | [RoslynMcp (chrismo80)](https://github.com/chrismo80/RoslynMcp) | watch | MIT | 2026-05-19 | C# | not counted | dotnet tool |

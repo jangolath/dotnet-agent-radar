@@ -23,7 +23,9 @@
       "last_push": "2026-11-08",
       "archived": false,
       "top5": 1,
-      "facts": {"language": "C#"}
+      "facts": {
+        "language": "C#"
+      }
     },
     {
       "id": "aaronontheweb-dotnet-skills",
@@ -37,7 +39,9 @@
       "license": "MIT",
       "last_push": "2026-10-28",
       "archived": false,
-      "facts": {"language": "Shell"}
+      "facts": {
+        "language": "Shell"
+      }
     },
     {
       "id": "agent-framework",
@@ -52,7 +56,9 @@
       "last_push": "2026-11-08",
       "archived": false,
       "top5": 2,
-      "facts": {"language": "Python (repo); .NET package line"}
+      "facts": {
+        "language": "Python (repo); .NET package line"
+      }
     },
     {
       "id": "microsoft-mcp",
@@ -67,7 +73,9 @@
       "last_push": "2026-11-08",
       "archived": false,
       "top5": 3,
-      "facts": {"language": "C#"}
+      "facts": {
+        "language": "C#"
+      }
     },
     {
       "id": "apra-fleet",
@@ -82,7 +90,9 @@
       "license_note": "LICENSE file is Apache-2.0 text; GitHub's detector reports NOASSERTION",
       "last_push": "2026-11-08",
       "archived": false,
-      "facts": {"language": "JavaScript"}
+      "facts": {
+        "language": "JavaScript"
+      }
     },
     {
       "id": "fleetspark-fleet",
@@ -96,7 +106,9 @@
       "license": "MIT",
       "last_push": "2026-06-30",
       "archived": false,
-      "facts": {"language": "TypeScript"}
+      "facts": {
+        "language": "TypeScript"
+      }
     },
     {
       "id": "carquiza-roslynmcp",
@@ -110,7 +122,11 @@
       "license": "none",
       "last_push": "2025-06-24",
       "archived": false,
-      "facts": {"language": "C#", "tools": "symbol search, references, dependencies, complexity", "install": "clone and build"}
+      "facts": {
+        "language": "C#",
+        "tools": "symbol search, references, dependencies, complexity",
+        "install": "clone and build"
+      }
     },
     {
       "id": "joshuaramirez-roslynmcpserver",
@@ -124,22 +140,30 @@
       "license": "MIT",
       "last_push": "2026-11-08",
       "archived": false,
-      "facts": {"language": "C#", "tools": "66 (README claim)", "install": "dotnet tool"}
+      "facts": {
+        "language": "C#",
+        "tools": "66 (README claim)",
+        "install": "dotnet tool"
+      }
     },
     {
       "id": "madq-roslynmcp",
       "repo": "MadQ/RoslynMcp",
       "name": "RoslynMcp (MadQ)",
       "category": "mcp-roslyn",
-      "verdict": "use",
+      "verdict": "watch",
       "what": "Roslyn MCP server for C# code intelligence: type resolution, cross-file references, semantic rename with preview/apply, diagnostics. 46 tools (44 public, 2 debug-only) per its README.",
-      "reason": "MIT, active, documents its security boundary (file access limited to the workspace tree) and ships setup for common MCP clients. Caveats: self-described beta, installs with --prerelease, requires the .NET 10 or 11 SDK, and a recent breaking rename of the package and tool key.",
+      "reason": "MIT, active, documents its security boundary (file access limited to the workspace tree) and ships setup for common MCP clients. Caveats: self-described beta, installs with --prerelease, requires the .NET 10 or 11 SDK, and a recent breaking rename of the package and tool key. Self-described beta; not yet hands-on tested here, so watch rather than use.",
       "pick_if": "you want one Roslyn server for navigation plus careful rename, and you are on a current SDK.",
       "license": "MIT",
       "last_push": "2026-11-08",
       "archived": false,
       "top5": 4,
-      "facts": {"language": "C#", "tools": "46 (README claim)", "install": "dotnet tool (prerelease)"}
+      "facts": {
+        "language": "C#",
+        "tools": "46 (README claim)",
+        "install": "dotnet tool (prerelease)"
+      }
     },
     {
       "id": "sailro-roslynmcpextension",
@@ -153,7 +177,11 @@
       "license": "MIT",
       "last_push": "2026-04-11",
       "archived": false,
-      "facts": {"language": "C#", "tools": "7", "install": "build the VSIX"}
+      "facts": {
+        "language": "C#",
+        "tools": "7",
+        "install": "build the VSIX"
+      }
     },
     {
       "id": "egorpavlikhin-roslyn-mcp",
@@ -167,7 +195,11 @@
       "license": "none",
       "last_push": "2025-05-15",
       "archived": false,
-      "facts": {"language": "C#", "tools": "2", "install": "dotnet run from source"}
+      "facts": {
+        "language": "C#",
+        "tools": "2",
+        "install": "dotnet run from source"
+      }
     },
     {
       "id": "chrismo80-roslynmcp",
@@ -181,7 +213,11 @@
       "license": "MIT",
       "last_push": "2026-05-19",
       "archived": false,
-      "facts": {"language": "C#", "tools": "not counted", "install": "dotnet tool"}
+      "facts": {
+        "language": "C#",
+        "tools": "not counted",
+        "install": "dotnet tool"
+      }
     },
     {
       "id": "richardhan-mssql-mcp-server",
@@ -196,7 +232,12 @@
       "last_push": "2026-11-06",
       "archived": false,
       "top5": 5,
-      "facts": {"language": "Python", "tools": "table listing and query execution", "install": "uvx / PyPI", "writes": "opt-in"}
+      "facts": {
+        "language": "Python",
+        "tools": "table listing and query execution",
+        "install": "uvx / PyPI",
+        "writes": "opt-in"
+      }
     },
     {
       "id": "aaronontheweb-mssql-mcp",
@@ -210,7 +251,12 @@
       "license": "Apache-2.0",
       "last_push": "2026-01-22",
       "archived": false,
-      "facts": {"language": "C#", "tools": "3", "install": "Docker / dotnet", "writes": "unrestricted by server (use a read-only login)"}
+      "facts": {
+        "language": "C#",
+        "tools": "3",
+        "install": "Docker / dotnet",
+        "writes": "unrestricted by server (use a read-only login)"
+      }
     },
     {
       "id": "ian-cowley-mcpsqlserver",
@@ -224,7 +270,12 @@
       "license": "MIT",
       "last_push": "2026-06-09",
       "archived": false,
-      "facts": {"language": "C#", "tools": "not counted", "install": "build from source", "writes": "not restricted in README"}
+      "facts": {
+        "language": "C#",
+        "tools": "not counted",
+        "install": "build from source",
+        "writes": "not restricted in README"
+      }
     },
     {
       "id": "nocentino-sql-mcp-server",
@@ -238,7 +289,12 @@
       "license": "none",
       "last_push": "2026-09-14",
       "archived": false,
-      "facts": {"language": "TypeScript", "tools": "34 DBA tools (README claim)", "install": "Docker Compose", "writes": "diagnostic queries"}
+      "facts": {
+        "language": "TypeScript",
+        "tools": "34 DBA tools (README claim)",
+        "install": "Docker Compose",
+        "writes": "diagnostic queries"
+      }
     },
     {
       "id": "tsqllint",
@@ -252,7 +308,9 @@
       "license": "MIT",
       "last_push": "2026-08-26",
       "archived": false,
-      "facts": {"language": "C#"}
+      "facts": {
+        "language": "C#"
+      }
     },
     {
       "id": "sqlfluff",
@@ -266,7 +324,9 @@
       "license": "MIT",
       "last_push": "2026-11-08",
       "archived": false,
-      "facts": {"language": "Python"}
+      "facts": {
+        "language": "Python"
+      }
     },
     {
       "id": "tsqlscope",
@@ -280,7 +340,9 @@
       "license": "MIT",
       "last_push": "2026-08-06",
       "archived": false,
-      "facts": {"language": "C#"}
+      "facts": {
+        "language": "C#"
+      }
     },
     {
       "id": "sqlskim",
@@ -294,7 +356,9 @@
       "license": "NOASSERTION",
       "last_push": "2022-11-28",
       "archived": true,
-      "facts": {"language": "C#"}
+      "facts": {
+        "language": "C#"
+      }
     },
     {
       "id": "awesome-claude-code-plugins",
@@ -308,7 +372,9 @@
       "license": "Apache-2.0",
       "last_push": "2026-08-12",
       "archived": false,
-      "facts": {"language": "JavaScript"}
+      "facts": {
+        "language": "JavaScript"
+      }
     },
     {
       "id": "best-of-mcp-servers",
