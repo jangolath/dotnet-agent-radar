@@ -1,0 +1,32 @@
+name: Suggest a tool
+description: Propose a .NET / SQL Server / Azure agent tool for the list
+labels: ["suggestion"]
+body:
+  - type: input
+    id: repo
+    attributes:
+      label: GitHub repository
+      placeholder: owner/name
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What it does and why it belongs
+    validations:
+      required: true
+  - type: dropdown
+    id: ran
+    attributes:
+      label: Have you run it?
+      options:
+        - "Yes"
+        - "No, I only read the README"
+    validations:
+      required: true
+  - type: checkboxes
+    id: disclosure
+    attributes:
+      label: Disclosure
+      options:
+        - label: I am not the author, or I have said so above.

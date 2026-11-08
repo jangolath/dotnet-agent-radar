@@ -1,0 +1,16 @@
+name: Report a stale or wrong entry
+description: An entry is outdated, archived, relicensed or its verdict looks wrong
+labels: ["stale"]
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Entry (name or repo)
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: What changed, with a link as evidence
+    validations:
+      required: true

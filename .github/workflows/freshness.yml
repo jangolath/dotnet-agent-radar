@@ -1,0 +1,40 @@
+name: Freshness check
+on:
+  schedule:
+    - cron: "17 5 * * 1"   # weekly, Monday 05:17 UTC
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run checks
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python scripts/radar.py check --report report.md 2> findings.txt
+          cat findings.txt
+      - name: Open, update or close the report issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="Radar freshness report"
+          N=$(gh issue list --state open --json number,title --jq "[.[] | select(.title==\"$TITLE\")][0].number // empty")
+          if grep -q '^findings: 0$' findings.txt; then
+            if [ -n "$N" ]; then gh issue close "$N" --comment "No drift found on this run."; fi
+            exit 0
+          fi
+          if [ -n "$N" ]; then
+            gh issue edit "$N" --body-file report.md
+          else
+            gh issue create --title "$TITLE" --body-file report.md
+          fi
